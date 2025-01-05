@@ -5,9 +5,22 @@ if (get3DENActionState "togglemap" == 0) then
     do3DENAction "toggleMap";
 };
 
+// Clear layer if it exists
+delete3DENEntities (get3DENLayerEntities (call PG_fnc_getPointsLayer));
+
 if (isNil "PG_LookUpTable") then
 {
     PG_LookUpTable = createHashMap; // Stores [entityID, index in PG_Points]
+};
+
+if (isNil "PG_ConnectionLineWidth") then
+{
+    PG_ConnectionLineWidth = 20;
+};
+
+if (isNil "PG_ConnectionLineColor") then
+{
+    PG_ConnectionLineColor = [1, 0, 0, 1];
 };
 
 if (isNil "PG_Poly_Marker") then
