@@ -52,5 +52,28 @@ if (_index % 3 == 0) then // Anchor point
 }
 else // Control points
 {
+    // clearRadio;
+    // systemChat str _index;
+    if (_index > 1 && {_index < (count PG_Points - 1)}) then // The first and last control points don't have a partner
+    {
+        // In order to find out if we need to
+        // increase or decrease the _index to find the other control point
+        // we check in which direction the anchor point lies
+        private _indexOtherControlPoint =
+        if ((_index + 1) mod 3 == 0) then
+        {
+            _index + 2;
+        }
+        else
+        {
+            _index - 2
+        };
 
+        private _controlPoint = [_indexOtherControlPoint] call PG_fnc_getPointEntityFromIndex;
+        private _OldControlPointPosition = PG_Points select _indexOtherControlPoint;
+        private _newControlPointPosition = _OldControlPointPosition vectorAdd (_posDelta vectorMultiply -1);
+
+        PG_Points set [_indexOtherControlPoint, _newControlPointPosition];
+        ignore3DENHistory {_controlPoint set3DENAttribute ["position", _newControlPointPosition]};
+    };
 };
