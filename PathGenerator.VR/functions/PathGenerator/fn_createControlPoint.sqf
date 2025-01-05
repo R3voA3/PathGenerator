@@ -14,7 +14,7 @@ if _isNew then
     PG_Points append [getPosATL _controlPoint];
 };
 
-    // If we create entities from existing path then we reuse the old index
+// If we create entities from existing path then we reuse the old index
 private _index = if (_oldIndex > -1) then {_oldIndex} else {count PG_Points - 1};
 
 PG_LookUpTable set [get3DENEntityID _controlPoint, _index];
