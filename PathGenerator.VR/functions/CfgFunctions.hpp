@@ -39,6 +39,7 @@ class CfgFunctions
 			class getPointsLayer { file = "functions\PathGenerator\fn_getPointsLayer.sqf"; };
 			class getSegmentCount { file = "functions\PathGenerator\fn_getSegmentCount.sqf"; };
 			class handleDeletion { file = "functions\PathGenerator\fn_handleDeletion.sqf"; };
+			class isAnchorPoint { file = "functions\PathGenerator\fn_isAnchorPoint.sqf"; };
 			class main { file = "functions\PathGenerator\fn_main.sqf"; };
 			class movePoint { file = "functions\PathGenerator\fn_movePoint.sqf"; };
 			class reset { file = "functions\PathGenerator\fn_reset.sqf"; };
