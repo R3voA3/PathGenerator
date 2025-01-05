@@ -17,12 +17,20 @@ class CfgFunctions
 
 		};
 
+		class Debug
+		{
+
+			class recompile { file = "functions\Debug\fn_recompile.sqf"; };
+
+		};
+
 		class PathGenerator
 		{
 
 			class createAnchorPoint { file = "functions\PathGenerator\fn_createAnchorPoint.sqf"; };
 			class createControlPoint { file = "functions\PathGenerator\fn_createControlPoint.sqf"; };
 			class createSegment { file = "functions\PathGenerator\fn_createSegment.sqf"; };
+			class drawConnections { file = "functions\PathGenerator\fn_drawConnections.sqf"; };
 			class drawPath { file = "functions\PathGenerator\fn_drawPath.sqf"; };
 			class getMouseToWorldPos { file = "functions\PathGenerator\fn_getMouseToWorldPos.sqf"; };
 			class getPointEntityFromIndex { file = "functions\PathGenerator\fn_getPointEntityFromIndex.sqf"; };
