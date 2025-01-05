@@ -54,7 +54,7 @@ else // Control points
 {
     // clearRadio;
     // systemChat str _index;
-    if (_index > 1 && {_index < (count PG_Points - 1)}) then // The first and last control points don't have a partner
+    if (!PG_ShiftToggled && {_index > 1 && {_index < (count PG_Points - 1)}}) then // The first and last control points don't have a partner
     {
         // In order to find out if we need to
         // increase or decrease the _index to find the other control point

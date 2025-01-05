@@ -35,6 +35,11 @@ if (isNil "PG_Points") then
     call PG_fnc_createSegment;
 };
 
+if (isNil "PG_ShiftToggled") then
+{
+    PG_ShiftToggled = false;
+};
+
 if (_display3DEN getVariable ["PG_KeyDown_EH_ID", -1] == -1) then
 {
     _display3DEN setVariable
@@ -43,6 +48,8 @@ if (_display3DEN getVariable ["PG_KeyDown_EH_ID", -1] == -1) then
         _display3DEN displayAddEventHandler ["KeyDown",
         {
             params ["_display3DEN", "_key", "_shift"];
+
+            PG_ShiftToggled = !PG_ShiftToggled;
 
             if (_key == 57 && _shift) then
             {
