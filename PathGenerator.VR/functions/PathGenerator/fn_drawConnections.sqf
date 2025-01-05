@@ -4,7 +4,7 @@ if (PG_Points isEqualTo []) exitWith {};
 
 for "_index" from 0 to (count PG_Points - 1) do
 {
-    if (_index mod 3 == 0) then
+    if (_index call PG_fnc_isAnchorPoint) then
     {
         if (_index == 0) then // First anchor point, no previous control point
         {

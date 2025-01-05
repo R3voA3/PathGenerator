@@ -47,9 +47,7 @@ if (_display3DEN getVariable ["PG_KeyDown_EH_ID", -1] == -1) then
         "PG_KeyDown_EH_ID",
         _display3DEN displayAddEventHandler ["KeyDown",
         {
-            params ["_display3DEN", "_key", "_shift"];
-
-            PG_ShiftToggled = !PG_ShiftToggled;
+            params ["", "_key", "_shift"];
 
             if (_key == 57 && _shift) then
             {

@@ -2,7 +2,10 @@ params ["_pointEntity"];
 
 private _index = [_pointEntity] call PG_fnc_getPointEntityIndex;
 
-if (_index mod 3 == 0) then
+// Some entity not related to our path was deleted
+if (_index == -1) exitWith {};
+
+if (_index call PG_fnc_isAnchorPoint) then
 {
 
 };
