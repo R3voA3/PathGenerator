@@ -20,7 +20,6 @@ if (isNil "PG_Points") then
 {
     PG_Points = [];
     call PG_fnc_createSegment;
-    call PG_fnc_drawPath;
 };
 
 if (_display3DEN getVariable ["PG_KeyDown_EH_ID", -1] == -1) then
@@ -35,21 +34,7 @@ if (_display3DEN getVariable ["PG_KeyDown_EH_ID", -1] == -1) then
             if (_key == 57 && _shift) then
             {
                 call PG_fnc_createSegment;
-                call PG_fnc_drawPath;
             };
-        }]
-    ];
-};
-
-if (_display3DEN getVariable ["PG_3DEN_Removed_EH_ID", -1] == -1) then
-{
-    _display3DEN setVariable
-    [
-        "PG_3DEN_Removed_EH_ID",
-        add3DENEventHandler ["OnEditableEntityRemoved",
-        {
-            params ["_entity"];
-            call PG_fnc_drawPath;
         }]
     ];
 };
@@ -62,7 +47,21 @@ if (_display3DEN getVariable ["PG_3DEN_Drag_EH_ID", -1] == -1) then
         add3DENEventHandler ["OnEntityDragged",
         {
             _this call PG_fnc_movePoint;
+        }]
+    ];
+};
+
+private _ctrlMap = _display3DEN displayCtrl 51;
+
+if (_ctrlMap getVariable ["PG_Draw_EH_ID", -1] == -1) then
+{
+    _ctrlMap setVariable
+    [
+        "PG_Draw_EH_ID",
+        _ctrlMap ctrlAddEventHandler ["Draw",
+        {
             call PG_fnc_drawPath;
+            _this call PG_fnc_drawConnections;
         }]
     ];
 };

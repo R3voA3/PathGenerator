@@ -7,11 +7,11 @@ if (call PG_fnc_getSegmentCount == 0) then
     private _controlPoint2 = [_center vectorAdd [50 * 0.5, -50 * 0.5, 0]] call PG_fnc_createControlPoint;
     private _anchorPoint2 = [_center vectorAdd [50, 0, 0]] call PG_fnc_createAnchorPoint;
 
-    ignore3DENHistory
-    {
-        add3DENConnection ["Sync", [_controlPoint1], _anchorPoint1];
-        add3DENConnection ["Sync", [_controlPoint2], _anchorPoint2];
-    };
+    // ignore3DENHistory
+    // {
+    //     add3DENConnection ["Sync", [_controlPoint1], _anchorPoint1];
+    //     add3DENConnection ["Sync", [_controlPoint2], _anchorPoint2];
+    // };
 }
 else
 {
@@ -29,9 +29,9 @@ else
     private _controlPoint1 = [_newControlPointPosition] call PG_fnc_createControlPoint;
     private _anchorPoint = [_center] call PG_fnc_createAnchorPoint;
 
-    ignore3DENHistory
-    {
-        add3DENConnection ["Sync", [_controlPointPreviousAnchor], _previousAnchor];
-        add3DENConnection ["Sync", [_controlPoint1], _anchorPoint];
-    };
+    // ignore3DENHistory
+    // {
+    //     add3DENConnection ["Sync", [_controlPointPreviousAnchor], _previousAnchor];
+    //     add3DENConnection ["Sync", [_controlPoint1], _anchorPoint];
+    // };
 };
