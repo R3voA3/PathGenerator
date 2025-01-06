@@ -10,6 +10,7 @@ class Display3DEN
         {
             class Items
             {
+                class Separator;
                 class Tools
                 {
                     items[] +=
@@ -52,15 +53,14 @@ class Display3DEN
                 class PG_SavePath
                 {
                     text = "Save Path";
-                    picture "a3\3den\data\displays\display3den\toolbar\saveas_ca.paa";
+                    picture = "a3\3den\data\displays\display3den\toolbar\saveas_ca.paa";
                     action = "call PG_fnc_savePath";
                 };
                 class PG_LoadPath
                 {
                     text = "Load Path";
-                    action = "call PG_fnc_savePath";
+                    action = "call PG_fnc_loadPath";
                 };
-                class Separator;
             };
         };
     };
