@@ -16,7 +16,7 @@ for "_index" from 0 to (count PG_Points - 1) do
             {
                 _ctrlMap drawLine [PG_Points # _index, PG_Points # (_index - 1), PG_ConnectionLineColor, PG_ConnectionLineWidth];
             }
-            else // Someone anchor point in the middle, previous and following control points are present
+            else // Some anchor point in the middle, previous and following control points are present
             {
                 _ctrlMap drawLine [PG_Points # _index, PG_Points # (_index + 1), PG_ConnectionLineColor, PG_ConnectionLineWidth];
                 _ctrlMap drawLine [PG_Points # _index, PG_Points # (_index - 1), PG_ConnectionLineColor, PG_ConnectionLineWidth];
