@@ -25,7 +25,10 @@ class Display3DEN
                     {
                         "PG_NewPath",
                         "PG_CreatePoint",
-                        "PG_ToggleControlPointsBehaviour"
+                        "PG_ToggleControlPointsBehaviour",
+                        "Separator",
+                        "PG_SavePath",
+                        "PG_LoadPath"
                     };
                 };
                 class PG_NewPath
@@ -46,6 +49,18 @@ class Display3DEN
                     action = "_this call PG_fnc_toggleControlPointBehaviour";
                     shortcuts[] = {INPUT_ALT_OFFSET + DIK_U};
                 };
+                class PG_SavePath
+                {
+                    text = "Save Path";
+                    picture "a3\3den\data\displays\display3den\toolbar\saveas_ca.paa";
+                    action = "call PG_fnc_savePath";
+                };
+                class PG_LoadPath
+                {
+                    text = "Load Path";
+                    action = "call PG_fnc_savePath";
+                };
+                class Separator;
             };
         };
     };
