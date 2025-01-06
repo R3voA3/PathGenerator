@@ -1,4 +1,4 @@
-private _ctrlMap = findDisplay 313 displayctrl 51;
+private _ctrlMap = findDisplay 313 displayCtrl 51;
 
 if (get3DENActionState "togglemap" > 0) exitWith
 {

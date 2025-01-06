@@ -52,7 +52,7 @@ if (_index % 3 == 0) then // Anchor point
 }
 else // Control points
 {
-    if (!PG_ShiftToggled && {_index > 1 && {_index < (count PG_Points - 2)}}) then // The first and last control points don't have a partner
+    if (!(missionNamespace getVariable ["PG_ControlPointsMoveTogether", true]) && {_index > 1 && {_index < (count PG_Points - 2)}}) then // The first and last control points don't have a partner
     {
         // In order to find out if we need to
         // increase or decrease the _index to find the other control point

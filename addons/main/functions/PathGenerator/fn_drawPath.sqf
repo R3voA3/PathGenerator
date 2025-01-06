@@ -8,7 +8,7 @@ if (missionNamespace getVariable ["ENH_Points_Previous", []] isNotEqualTo PG_Poi
 
         for "_progress" from 0 to 1 step 0.03 do
         {
-            _interpolatedPath pushback ((_progress bezierInterpolation
+            _interpolatedPath pushBack ((_progress bezierInterpolation
             [
                 _points select 0,
                 _points select 1,
