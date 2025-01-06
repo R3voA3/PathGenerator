@@ -11,7 +11,7 @@ if (PG_Points isNotEqualTo []) then
 
         if (_pathName != "") then
         {
-            _pathName = _pathName + " " + ([systemTime] call ENH_fnc_systemTimeFormatted);
+            _pathName = format ["%1 - %2", [systemTime] call ENH_fnc_systemTimeFormatted, _pathName];
 
             private _storedPaths = profileNamespace getVariable ["PG_StoredPaths", createHashMap];
             _storedPaths set [_pathName, PG_Points];
