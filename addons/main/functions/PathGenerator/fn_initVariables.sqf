@@ -22,7 +22,6 @@ if (isNil "PG_Poly_Marker") then
 if (isNil "PG_Points") then
 {
     PG_Points = [];
-    call PG_fnc_createSegment;
 };
 
 if (isNil "PG_ControlPointsMoveTogether") then
