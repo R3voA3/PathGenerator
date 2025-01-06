@@ -17,6 +17,7 @@ class CfgFunctions
         {
             class createAnchorPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_createAnchorPoint.sqf"; };
             class createControlPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_createControlPoint.sqf"; };
+            class createPathFromArray { file = "x\pg\addons\main\functions\PathGenerator\fn_createPathFromArray.sqf"; };
             class createSegment { file = "x\pg\addons\main\functions\PathGenerator\fn_createSegment.sqf"; };
             class drawConnections { file = "x\pg\addons\main\functions\PathGenerator\fn_drawConnections.sqf"; };
             class drawPath { file = "x\pg\addons\main\functions\PathGenerator\fn_drawPath.sqf"; };
@@ -29,12 +30,13 @@ class CfgFunctions
             class handleDeletion { file = "x\pg\addons\main\functions\PathGenerator\fn_handleDeletion.sqf"; };
             class initVariables { file = "x\pg\addons\main\functions\PathGenerator\fn_initVariables.sqf"; };
             class isAnchorPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_isAnchorPoint.sqf"; };
+            class loadPath { file = "x\pg\addons\main\functions\PathGenerator\fn_loadPath.sqf"; };
             class main { file = "x\pg\addons\main\functions\PathGenerator\fn_main.sqf"; };
             class movePoint { file = "x\pg\addons\main\functions\PathGenerator\fn_movePoint.sqf"; };
             class reset { file = "x\pg\addons\main\functions\PathGenerator\fn_reset.sqf"; };
+            class savePath { file = "x\pg\addons\main\functions\PathGenerator\fn_savePath.sqf"; };
             class toggleControlPointBehaviour { file = "x\pg\addons\main\functions\PathGenerator\fn_toggleControlPointBehaviour.sqf"; };
             class updatePoint { file = "x\pg\addons\main\functions\PathGenerator\fn_updatePoint.sqf"; };
-            class savePath { file = "x\pg\addons\main\functions\PathGenerator\fn_savePath.sqf"; };
         };
     };
 };
