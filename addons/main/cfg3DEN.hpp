@@ -5,7 +5,6 @@ class Cfg3DEN
         class PathGenerator
         {
             Init = "_this call PG_fnc_3DENInit";
-            OnEntityDragged = "_this call PG_fnc_movePoint";
         };
         class PathGenerator_Debug
         {

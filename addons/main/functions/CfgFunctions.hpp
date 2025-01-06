@@ -15,6 +15,7 @@ class CfgFunctions
         };
         class PathGenerator
         {
+            class addEventHandlers { file = "x\pg\addons\main\functions\PathGenerator\fn_addEventHandlers.sqf"; };
             class createAnchorPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_createAnchorPoint.sqf"; };
             class createControlPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_createControlPoint.sqf"; };
             class createPathFromArray { file = "x\pg\addons\main\functions\PathGenerator\fn_createPathFromArray.sqf"; };
