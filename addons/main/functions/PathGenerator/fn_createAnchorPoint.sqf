@@ -5,7 +5,7 @@ private _anchorPoint = objNull;
 ignore3DENHistory
 {
     _anchorPoint = create3DENEntity ["Logic", "SideOPFOR_F", _position];
-    _anchorPoint set3DENAttribute ["name", str count PG_Points];
+    _anchorPoint set3DENAttribute ["name", format ["Index_%1", count PG_Points]];
     _anchorPoint set3DENLayer (call PG_fnc_getPointsLayer);
 };
 
@@ -18,5 +18,7 @@ if _isNew then
 private _index = if (_oldIndex > -1) then {_oldIndex} else {count PG_Points - 1};
 
 PG_LookUpTable set [get3DENEntityID _anchorPoint, _index];
+
+_anchorPoint call PG_fnc_addEventHandlers;
 
 _anchorPoint

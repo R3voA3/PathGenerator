@@ -5,7 +5,7 @@ private _controlPoint = objNull;
 ignore3DENHistory
 {
     _controlPoint = create3DENEntity ["Logic", "Logic", _position];
-    _controlPoint set3DENAttribute ["name", str count PG_Points];
+    _controlPoint set3DENAttribute ["name", format ["Index_%1", count PG_Points]];
     _controlPoint set3DENLayer (call PG_fnc_getPointsLayer);
 };
 
@@ -18,5 +18,7 @@ if _isNew then
 private _index = if (_oldIndex > -1) then {_oldIndex} else {count PG_Points - 1};
 
 PG_LookUpTable set [get3DENEntityID _controlPoint, _index];
+
+_controlPoint call PG_fnc_addEventHandlers;
 
 _controlPoint
