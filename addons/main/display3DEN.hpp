@@ -41,7 +41,7 @@ class Display3DEN
                 class PG_CreatePoint
                 {
                     text = "Create Point";
-                    action = "call PG_fnc_createSegment";
+                    action = "[call PG_fnc_getMouseToWorldPos] call PG_fnc_createSegment";
                     shortcuts[] = {INPUT_ALT_OFFSET + DIK_SPACE};
                 };
                 class PG_ToggleControlPointsBehaviour
