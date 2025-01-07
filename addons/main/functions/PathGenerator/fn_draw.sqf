@@ -51,7 +51,7 @@ for "_i" from 0 to (call PG_fnc_getSegmentCount - 1) do
 private _previousPoint = PG_InterpolatedPath # 0;
 
 // Limited reached with 8500 points
-private _maxIndex = count PG_InterpolatedPath - 2;
+private _maxIndex = count PG_InterpolatedPath - 1;
 
 {
     if (_forEachIndex < _maxIndex) then
