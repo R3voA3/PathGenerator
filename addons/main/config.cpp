@@ -6,7 +6,7 @@ class CfgPatches
         author = "R3vo";
         url = "https://github.com/R3voA3/PathGenerator";
         requiredVersion = 2.18;
-        requiredAddons[] = {"3DEN", "A3_Data_F_Decade_Loadorder", "3denEnhanced"};
+        requiredAddons[] = {"3DEN", "A3_Data_F_Decade_Loadorder", "3denEnhanced", "cba_main"};
     };
 };
 
