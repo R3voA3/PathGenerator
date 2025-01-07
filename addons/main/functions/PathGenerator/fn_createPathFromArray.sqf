@@ -1,7 +1,5 @@
 params ["_points"];
 
-diag_log _points;
-
 PG_Points = [];
 PG_LookUpTable = createHashMap;
 
