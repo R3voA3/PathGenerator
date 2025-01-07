@@ -6,3 +6,5 @@ params ["_display3DEN"];
 {
     _this call PG_fnc_draw;
 }]
+
+call PG_fnc_initSettings;

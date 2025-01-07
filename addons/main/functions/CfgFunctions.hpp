@@ -29,6 +29,7 @@ class CfgFunctions
             class getPointsLayer { file = "x\pg\addons\main\functions\PathGenerator\fn_getPointsLayer.sqf"; };
             class getSegmentCount { file = "x\pg\addons\main\functions\PathGenerator\fn_getSegmentCount.sqf"; };
             class handleDeletion { file = "x\pg\addons\main\functions\PathGenerator\fn_handleDeletion.sqf"; };
+            class initSettings { file = "x\pg\addons\main\functions\PathGenerator\fn_initSettings.sqf"; };
             class initVariables { file = "x\pg\addons\main\functions\PathGenerator\fn_initVariables.sqf"; };
             class isAnchorPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_isAnchorPoint.sqf"; };
             class loadPath { file = "x\pg\addons\main\functions\PathGenerator\fn_loadPath.sqf"; };
