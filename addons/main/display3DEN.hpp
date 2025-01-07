@@ -28,15 +28,18 @@ class Display3DEN
                         "PG_CreatePoint",
                         "PG_ToggleControlPointsBehaviour",
                         "Separator",
+                        "PG_Reset",
+                        "Separator",
                         "PG_SavePath",
-                        "PG_LoadPath"
+                        "PG_LoadPath",
+                        "Separator",
+                        "PG_CreateRandomPath"
                     };
                 };
                 class PG_NewPath
                 {
                     text = "Create New Path";
                     action = "call PG_fnc_main";
-                    shortcuts[] = {INPUT_ALT_OFFSET + DIK_P};
                 };
                 class PG_CreatePoint
                 {
@@ -50,6 +53,11 @@ class Display3DEN
                     action = "_this call PG_fnc_toggleControlPointBehaviour";
                     shortcuts[] = {INPUT_ALT_OFFSET + DIK_U};
                 };
+                class PG_Reset
+                {
+                    text = "Reset everything";
+                    action = "call PG_fnc_reset";
+                };
                 class PG_SavePath
                 {
                     text = "Save Path";
@@ -60,6 +68,11 @@ class Display3DEN
                 {
                     text = "Load Path";
                     action = "call PG_fnc_loadPath";
+                };
+                class PG_CreateRandomPath
+                {
+                    text = "Create Random Path";
+                    action = "50 call PG_fnc_createRandomPath";
                 };
             };
         };
