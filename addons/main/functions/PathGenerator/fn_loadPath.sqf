@@ -31,7 +31,6 @@ if (_savedPaths isNotEqualTo []) then
         if (_points isNotEqualTo []) then
         {
             call PG_fnc_reset;
-            call PG_fnc_initVariables;
             [_points] call PG_fnc_createPathFromArray;
         };
     }];

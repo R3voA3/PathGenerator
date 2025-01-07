@@ -4,5 +4,4 @@ if (get3DENActionState "togglemap" == 0) then
 };
 
 call PG_fnc_reset;
-call PG_fnc_initVariables;
 [call PG_fnc_getMouseToWorldPos] call PG_fnc_createSegment
