@@ -12,6 +12,7 @@ class CfgFunctions
         class Debug
         {
             class recompile { file = "x\pg\addons\main\functions\Debug\fn_recompile.sqf"; };
+            class createRandomPath { file = "x\pg\addons\main\functions\Debug\fn_createRandomPath.sqf"; };
         };
         class PathGenerator
         {
@@ -20,8 +21,7 @@ class CfgFunctions
             class createControlPoint { file = "x\pg\addons\main\functions\PathGenerator\fn_createControlPoint.sqf"; };
             class createPathFromArray { file = "x\pg\addons\main\functions\PathGenerator\fn_createPathFromArray.sqf"; };
             class createSegment { file = "x\pg\addons\main\functions\PathGenerator\fn_createSegment.sqf"; };
-            class drawConnections { file = "x\pg\addons\main\functions\PathGenerator\fn_drawConnections.sqf"; };
-            class drawPath { file = "x\pg\addons\main\functions\PathGenerator\fn_drawPath.sqf"; };
+            class draw { file = "x\pg\addons\main\functions\PathGenerator\fn_draw.sqf"; };
             class getMouseToWorldPos { file = "x\pg\addons\main\functions\PathGenerator\fn_getMouseToWorldPos.sqf"; };
             class getPointEntityFromIndex { file = "x\pg\addons\main\functions\PathGenerator\fn_getPointEntityFromIndex.sqf"; };
             class getPointEntityIndex { file = "x\pg\addons\main\functions\PathGenerator\fn_getPointEntityIndex.sqf"; };
