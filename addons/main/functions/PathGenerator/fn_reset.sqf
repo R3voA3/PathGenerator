@@ -1,6 +1,3 @@
-// Delete Marker
-deleteMarker PG_Poly_Marker;
-
 // Reset all variables except functions
 allVariables missionNamespace apply
 {
@@ -18,3 +15,5 @@ ignore3DENHistory
     // Delete layer
     remove3DENLayer (call PG_fnc_getPointsLayer);
 };
+
+call PG_fnc_initVariables;
