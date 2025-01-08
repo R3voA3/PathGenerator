@@ -10,6 +10,6 @@ class CfgPatches
     };
 };
 
-#include "functions\CfgFunctions.hpp"
+#include "cfgFunctions.hpp"
 #include "display3DEN.hpp"
 #include "cfg3DEN.hpp"

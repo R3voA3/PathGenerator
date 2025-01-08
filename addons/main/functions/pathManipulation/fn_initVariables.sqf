@@ -19,6 +19,16 @@ if (isNil "PG_ControlPointsMoveTogether") then
     PG_ControlPointsMoveTogether = true;
 };
 
+if (isNil "PG_Points_Old") then
+{
+    PG_Points_Old = [];
+};
+
+if (isNil "PG_DrawEvenlySpacedPoints_Handle") then
+{
+    PG_DrawEvenlySpacedPoints_Handle = scriptNull;
+};
+
 // Settings
 if (isNil "PG_ConnectionLineWidth") then
 {
