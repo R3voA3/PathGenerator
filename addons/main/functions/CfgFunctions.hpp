@@ -8,11 +8,12 @@ class CfgFunctions
         class 3DEN
         {
             class 3DENInit { file = "x\pg\addons\main\functions\3DEN\fn_3DENInit.sqf"; };
+            class createEntitiesOnPath { file = "x\pg\addons\main\functions\PathGenerator\fn_createEntitiesOnPath.sqf"; };
         };
         class Debug
         {
-            class recompile { file = "x\pg\addons\main\functions\Debug\fn_recompile.sqf"; };
             class createRandomPath { file = "x\pg\addons\main\functions\Debug\fn_createRandomPath.sqf"; };
+            class recompile { file = "x\pg\addons\main\functions\Debug\fn_recompile.sqf"; };
         };
         class PathGenerator
         {
@@ -22,6 +23,7 @@ class CfgFunctions
             class createPathFromArray { file = "x\pg\addons\main\functions\PathGenerator\fn_createPathFromArray.sqf"; };
             class createSegment { file = "x\pg\addons\main\functions\PathGenerator\fn_createSegment.sqf"; };
             class draw { file = "x\pg\addons\main\functions\PathGenerator\fn_draw.sqf"; };
+            class getEvenlySpacedPoints { file = "x\pg\addons\main\functions\PathGenerator\fn_getEvenlySpacedPoints.sqf"; };
             class getMouseToWorldPos { file = "x\pg\addons\main\functions\PathGenerator\fn_getMouseToWorldPos.sqf"; };
             class getPointEntityFromIndex { file = "x\pg\addons\main\functions\PathGenerator\fn_getPointEntityFromIndex.sqf"; };
             class getPointEntityIndex { file = "x\pg\addons\main\functions\PathGenerator\fn_getPointEntityIndex.sqf"; };
@@ -39,7 +41,6 @@ class CfgFunctions
             class savePath { file = "x\pg\addons\main\functions\PathGenerator\fn_savePath.sqf"; };
             class toggleControlPointBehaviour { file = "x\pg\addons\main\functions\PathGenerator\fn_toggleControlPointBehaviour.sqf"; };
             class updatePoint { file = "x\pg\addons\main\functions\PathGenerator\fn_updatePoint.sqf"; };
-            class getEvenlySpacedPoints { file = "x\pg\addons\main\functions\PathGenerator\fn_getEvenlySpacedPoints.sqf"; };
         };
     };
 };
