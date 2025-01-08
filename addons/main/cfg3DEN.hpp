@@ -4,7 +4,7 @@ class Cfg3DEN
     {
         class PathGenerator
         {
-            Init = "_this call PG_fnc_3DENInit";
+            Init = "call PG_fnc_3DENInit";
         };
         class PathGenerator_Debug
         {

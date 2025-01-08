@@ -1,10 +1,9 @@
 #include "\a3\3den\ui\resincl.inc"
 
-params ["_display3DEN"];
+call PG_fnc_initVariables;
+call PG_fnc_initSettings;
 
-(_display3DEN displayCtrl IDC_DISPLAY3DEN_MAP) ctrlAddEventHandler ["Draw",
+(findDisplay IDD_DISPLAY3DEN displayCtrl IDC_DISPLAY3DEN_MAP) ctrlAddEventHandler ["Draw",
 {
     _this call PG_fnc_draw;
-}]
-
-call PG_fnc_initSettings;
+}];
