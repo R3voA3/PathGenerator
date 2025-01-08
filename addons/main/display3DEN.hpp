@@ -28,7 +28,6 @@ class Display3DEN
                         "PG_CreatePoint",
                         "PG_ToggleControlPointsBehaviour",
                         "Separator",
-                        "PG_CalculateEvenlySpacedPoints",
                         "PG_Reset",
                         "Separator",
                         "PG_SavePath",
@@ -53,11 +52,6 @@ class Display3DEN
                     text = "Toggle Control Point Behaviour";
                     action = "_this call PG_fnc_toggleControlPointBehaviour";
                     shortcuts[] = {INPUT_ALT_OFFSET + DIK_U};
-                };
-                class PG_CalculateEvenlySpacedPoints
-                {
-                    text = "Toggle Control Point Behaviour";
-                    action = "[10] spawn PG_fnc_getEvenlySpacedPoints";
                 };
                 class PG_Reset
                 {
