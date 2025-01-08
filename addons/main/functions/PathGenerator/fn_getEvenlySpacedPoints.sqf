@@ -1,4 +1,4 @@
-if (ENH_Points isEqualTo []) exitWith {};
+if (PG_Points isEqualTo []) exitWith {};
 
 params [["_spacing", 10]];
 
