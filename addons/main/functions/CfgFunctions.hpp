@@ -39,6 +39,7 @@ class CfgFunctions
             class savePath { file = "x\pg\addons\main\functions\PathGenerator\fn_savePath.sqf"; };
             class toggleControlPointBehaviour { file = "x\pg\addons\main\functions\PathGenerator\fn_toggleControlPointBehaviour.sqf"; };
             class updatePoint { file = "x\pg\addons\main\functions\PathGenerator\fn_updatePoint.sqf"; };
+            class getEvenlySpacedPoints { file = "x\pg\addons\main\functions\PathGenerator\fn_getEvenlySpacedPoints.sqf"; };
         };
     };
 };

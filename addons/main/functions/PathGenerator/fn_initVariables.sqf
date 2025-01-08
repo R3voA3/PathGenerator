@@ -9,6 +9,11 @@ if (isNil "PG_Points") then
     PG_Points = [];
 };
 
+if (isNil "PG_EquallySpacedPoints") then
+{
+    PG_EquallySpacedPoints = [];
+};
+
 if (isNil "PG_ControlPointsMoveTogether") then
 {
     PG_ControlPointsMoveTogether = true;

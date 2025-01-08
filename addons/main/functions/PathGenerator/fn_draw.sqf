@@ -64,13 +64,25 @@ private _colorPoints = format ["#(rgb,8,8,3)color(%1,%2,%3,%4)", PG_CurveColor#0
             PG_CurveColor
         ];
     };
+    // _ctrlMap drawEllipse
+    // [
+    //     _x,
+    //     2,
+    //     2,
+    //     0,
+    //     PG_CurveColor,
+    //     _colorPoints
+    // ];
+} forEach PG_InterpolatedPath;
+
+{
     _ctrlMap drawEllipse
     [
-        PG_InterpolatedPath # _forEachIndex,
+        _x,
         2,
         2,
         0,
         PG_CurveColor,
         _colorPoints
     ];
-} forEach PG_InterpolatedPath;
+} forEach PG_EquallySpacedPoints;
