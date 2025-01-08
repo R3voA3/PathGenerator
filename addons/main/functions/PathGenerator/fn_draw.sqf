@@ -52,6 +52,7 @@ private _previousPoint = PG_InterpolatedPath # 0;
 
 // Limited reached with 8500 points
 private _maxIndex = count PG_InterpolatedPath - 1;
+private _colorPoints = format ["#(rgb,8,8,3)color(%1,%2,%3,%4)", PG_CurveColor#0, PG_CurveColor#1, PG_CurveColor#2, PG_CurveColor#3];
 
 {
     if (_forEachIndex < _maxIndex) then
@@ -63,4 +64,13 @@ private _maxIndex = count PG_InterpolatedPath - 1;
             PG_CurveColor
         ];
     };
+    _ctrlMap drawEllipse
+    [
+        PG_InterpolatedPath # _forEachIndex,
+        2,
+        2,
+        0,
+        PG_CurveColor,
+        _colorPoints
+    ];
 } forEach PG_InterpolatedPath;
