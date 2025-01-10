@@ -32,7 +32,6 @@ class CfgFunctions
             class getPointsLayer {headerType = -1;};
             class getSegmentCount {headerType = -1;};
             class handleDeletion {headerType = -1;};
-            class initSettings {headerType = -1;};
             class initVariables {headerType = -1;};
             class isAnchorPoint {headerType = -1;};
             class loadPath {headerType = -1;};
