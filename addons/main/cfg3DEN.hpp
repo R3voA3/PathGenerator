@@ -29,7 +29,7 @@ class Cfg3DEN
                 };
             };
         };
-        class PG_SliderOneToFifty: PG_SliderPointZeroOneToOne
+        class PG_SliderOneToTwentyFive: PG_SliderPointZeroOneToOne
         {
             class Controls: Controls
             {
@@ -38,8 +38,8 @@ class Cfg3DEN
                 class Value: Value
                 {
                     lineSize = 1;
-                    sliderPosition = 25;
-                    sliderRange[] = {1, 50};
+                    sliderPosition = 12.5;
+                    sliderRange[] = {1, 25};
                     sliderStep = 1;
                 };
             };
@@ -71,7 +71,7 @@ class Cfg3DEN
                         {
                             displayName = "Connection Line Width";
                             property = "PG_ConnectionLineWidth";
-                            control = "PG_SliderOneToFifty";
+                            control = "PG_SliderOneToTwentyFive";
                             expression = "profileNamespace setVariable ['PG_ConnectionLineWidth', _value]";
                             defaultValue = "profileNamespace getVariable ['PG_ConnectionLineWidth', 10]";
                         };
