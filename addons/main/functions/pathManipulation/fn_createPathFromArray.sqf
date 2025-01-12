@@ -1,15 +1,18 @@
-params ["_points"];
-
-PG_Points = [];
-PG_LookUpTable = createHashMap;
-
+with uiNamespace do
 {
-    if (_forEachIndex call PG_fnc_isAnchorPoint) then
+    params ["_points"];
+
+    PG_Points = [];
+    PG_LookUpTable = createHashMap;
+
     {
-        [_x, true, _forEachIndex] call PG_fnc_createAnchorPoint;
-    }
-    else
-    {
-        [_x, true, _forEachIndex] call PG_fnc_createControlPoint;
-    };
-} forEach _points;
+        if (_forEachIndex call PG_fnc_isAnchorPoint) then
+        {
+            [_x, true, _forEachIndex] call PG_fnc_createAnchorPoint;
+        }
+        else
+        {
+            [_x, true, _forEachIndex] call PG_fnc_createControlPoint;
+        };
+    } forEach _points;
+};

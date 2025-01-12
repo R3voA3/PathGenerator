@@ -1,3 +1,6 @@
-params ["_index", "_position"];
+with uiNamespace do
+{
+    params ["_index", "_position"];
 
-PG_Points set [_index, _position];
+    PG_Points set [_index, _position];
+};

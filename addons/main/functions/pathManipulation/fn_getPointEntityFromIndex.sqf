@@ -1,8 +1,11 @@
-params ["_index"];
-
+with uiNamespace do
 {
-    if (_y == _index) exitWith
+    params ["_index"];
+
     {
-        get3DENEntity _x;
-    };
-} forEach PG_LookUpTable;
+        if (_y == _index) exitWith
+        {
+            get3DENEntity _x;
+        };
+    } forEach PG_LookUpTable;
+};

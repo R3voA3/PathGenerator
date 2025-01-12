@@ -8,6 +8,8 @@ class CfgFunctions
             file = "x\pg\addons\main\functions\3DEN";
             class 3DENInit {headerType = -1;};
             class createEntitiesOnPath {headerType = -1;};
+            class removePathLayer {headerType = -1;};
+            class onMissionPreviewEnd {headerType = -1;};
         };
         class Debug
         {

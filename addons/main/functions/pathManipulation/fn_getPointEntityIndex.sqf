@@ -1,3 +1,6 @@
-params ["_3DENID"];
+with uiNamespace do
+{
+    params ["_3DENID"];
 
-PG_LookUpTable getOrDefault [_3DENID, -1];
+    PG_LookUpTable getOrDefault [_3DENID, -1];
+};

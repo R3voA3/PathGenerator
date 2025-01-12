@@ -1,30 +1,33 @@
-// Necessary variables
-if (isNil "PG_LookUpTable") then
+with uiNamespace do
 {
-    PG_LookUpTable = createHashMap; // Stores [entityID, index in PG_Points]
-};
+    // Necessary variables
+    if (isNil "PG_LookUpTable") then
+    {
+        PG_LookUpTable = createHashMap; // Stores [entityID, index in PG_Points]
+    };
 
-if (isNil "PG_Points") then
-{
-    PG_Points = [];
-};
+    if (isNil "PG_Points") then
+    {
+        PG_Points = [];
+    };
 
-if (isNil "PG_EquallySpacedPoints") then
-{
-    PG_EquallySpacedPoints = [];
-};
+    if (isNil "PG_EquallySpacedPoints") then
+    {
+        PG_EquallySpacedPoints = [];
+    };
 
-if (isNil "PG_ControlPointsMoveTogether") then
-{
-    PG_ControlPointsMoveTogether = true;
-};
+    if (isNil "PG_ControlPointsMoveTogether") then
+    {
+        PG_ControlPointsMoveTogether = true;
+    };
 
-if (isNil "PG_Points_Old") then
-{
-    PG_Points_Old = [];
-};
+    if (isNil "PG_Points_Old") then
+    {
+        PG_Points_Old = [];
+    };
 
-if (isNil "PG_DrawEvenlySpacedPoints_Handle") then
-{
-    PG_DrawEvenlySpacedPoints_Handle = scriptNull;
+    if (isNil "PG_DrawEvenlySpacedPoints_Handle") then
+    {
+        PG_DrawEvenlySpacedPoints_Handle = scriptNull;
+    };
 };

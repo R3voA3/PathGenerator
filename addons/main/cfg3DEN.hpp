@@ -50,6 +50,8 @@ class Cfg3DEN
         class PathGenerator
         {
             Init = "call PG_fnc_3DENInit";
+            OnMissionPreviewEnd = "call PG_fnc_onMissionPreviewEnd";
+            OnBeforeMissionPreview = "call PG_fnc_onBeforeMissionPreview";
         };
         class PathGenerator_Debug
         {
