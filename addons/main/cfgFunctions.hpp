@@ -15,6 +15,11 @@ class CfgFunctions
             class createRandomPath {headerType = -1;};
             class recompile {headerType = -1;};
         };
+        class Export
+        {
+            file = "x\pg\addons\main\functions\export";
+            class copyPath {headerType = -1;};
+        };
         class PathManipulation
         {
             file = "x\pg\addons\main\functions\pathManipulation";
